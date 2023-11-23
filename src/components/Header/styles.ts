@@ -3,9 +3,9 @@
 import styled from 'styled-components'
 
 export const Header = styled.header`
-  background-color: var(--color-full-black);
+  background-color: var(--color-black);
   padding: 30px 0;
-  height: 100px;
+  height: 15vh;
 `
 export const HeaderContainer = styled.div`
   display: flex;
