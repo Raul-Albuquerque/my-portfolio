@@ -6,7 +6,6 @@ import styled from 'styled-components'
 export const Aside = styled.aside`
   padding: 70px 40px;
   height: 75vh;
-  background-color: var(--color-dark-gray);
   max-width: 140px;
   width: 100%;
   position: relative;
@@ -27,6 +26,7 @@ export const SocialMediaList = styled.ul`
 export const LinkCustomizado = styled(Link)`
   color: var(--color-gray);
   margin-bottom: 20px;
+  font-size: 16px;
 
   &:hover {
     color: var(--color-green);
