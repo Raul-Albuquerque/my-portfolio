@@ -1,11 +1,5 @@
 import * as S from './styles'
-
-import { Fira_Sans } from 'next/font/google'
-
-const firaSans = Fira_Sans({
-  weight: ['700'],
-  subsets: ['latin'],
-})
+import { firaSans } from '@/assets/fonts'
 
 export default function NavBar() {
   return (

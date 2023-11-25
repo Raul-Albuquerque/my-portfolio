@@ -1,10 +1,5 @@
 import * as S from './styles'
-import { Audiowide } from 'next/font/google'
-
-const audiowide = Audiowide({
-  weight: ['400'],
-  subsets: ['latin'],
-})
+import { audiowide } from '../../assets/fonts'
 
 export default function Header() {
   return (

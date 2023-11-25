@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="main-container">
       <SocialMediaBar />
-      <ContentContainer />
+      <ContentContainer type="home" />
       <NavBar />
     </div>
   )

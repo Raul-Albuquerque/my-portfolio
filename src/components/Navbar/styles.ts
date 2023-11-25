@@ -16,7 +16,7 @@ export const LinksContainer = styled.ul`
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  margin: 60px auto;
+  margin: 40px auto;
 `
 export const CustomizedLinks = styled(Link)`
   margin-bottom: 40px;
