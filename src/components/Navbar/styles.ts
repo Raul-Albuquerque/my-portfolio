@@ -4,18 +4,19 @@ import Link from 'next/link'
 import styled from 'styled-components'
 
 export const Nav = styled.nav`
-  max-width: 146px;
+  max-width: 10vw;
   width: 100%;
-  position: relative;
-  padding: 60px 24px;
   height: 75vh;
 `
 
 export const LinksContainer = styled.ul`
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
+  justify-content: start;
+  margin: 60px auto;
 `
 export const CustomizedLinks = styled(Link)`
   margin-bottom: 40px;

@@ -4,11 +4,11 @@ import Link from 'next/link'
 import styled from 'styled-components'
 
 export const Aside = styled.aside`
-  padding: 70px 40px;
+  padding: 20px;
   height: 75vh;
-  max-width: 140px;
-  width: 100%;
-  position: relative;
+  width: 5vw;
+  display: flex;
+  align-items: end;
 `
 export const SocialMediaList = styled.ul`
   color: var(--color-gray);
@@ -19,9 +19,7 @@ export const SocialMediaList = styled.ul`
   justify-content: space-between;
   align-items: center;
   border-radius: var(--border-radius);
-  position: absolute;
-  left: 40px;
-  bottom: 50px;
+  margin: 0 auto;
 `
 export const LinkCustomizado = styled(Link)`
   color: var(--color-gray);
