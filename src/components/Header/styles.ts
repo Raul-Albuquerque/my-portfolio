@@ -27,3 +27,56 @@ export const HeaderContainer = styled.div`
 export const HeaderLogo = styled(Link)`
   text-decoration: none;
 `
+
+export const SlideContainer = styled.div`
+  label {
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    display: block;
+    background: var(--color-gray);
+    position: relative;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background: var(--color-white);
+      border-radius: 20px;
+      transition: 1s;
+    }
+  }
+
+  input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+
+    &:checked + label {
+      background: var(--color-white);
+    }
+
+    &:checked + label:after {
+      left: 90px;
+      transform: translateX(-100%);
+      background-color: var(--color-gray);
+      transition: 1s;
+    }
+  }
+`
+export const Moon = styled.img`
+  position: absolute;
+  width: 30px;
+  top: 5px;
+  left: 50px;
+`
+export const Sun = styled.img`
+  position: absolute;
+  width: 30px;
+  top: 5px;
+  left: 5px;
+`
