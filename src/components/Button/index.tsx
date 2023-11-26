@@ -1,7 +1,7 @@
 import * as S from './styles'
 
 export type Props = {
-  type: 'submit' | 'button'
+  type: 'link' | 'button'
   children: string
   fontSize?: string
 }

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export const CardsContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   gap: 60px;
   width: 100%;
@@ -59,4 +59,37 @@ export const LinksContainer = styled.div`
   display: flex;
   align-items: end;
   justify-content: end;
+`
+
+export const CourseImage = styled.img`
+  height: 37px;
+  display: block;
+  margin-bottom: 10px;
+`
+
+export const CourseTitle = styled.h3`
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-white);
+`
+export const CourseDetails = styled.h4`
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-black);
+  text-transform: uppercase;
+`
+export const CourseDetailsContainer = styled.div`
+  margin-top: 20px;
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-white);
+    margin-top: 4px;
+  }
+`
+export const CourseContainer = styled.div`
+  max-width: 320px;
+  max-height: 310px;
+  height: 100%;
+  padding: 10px 16px 16px 16px;
 `

@@ -3,7 +3,7 @@ import * as S from './styles'
 import { firaSans } from '@/assets/fonts'
 
 type Props = {
-  title: string
+  title?: string
   children: JSX.Element
 }
 
