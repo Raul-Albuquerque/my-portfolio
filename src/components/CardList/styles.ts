@@ -42,7 +42,7 @@ export const LinkCustomizado = styled(Link)`
   color: var(--color-white);
   font-size: 16px;
   height: 35px;
-  margin-right: 8px;
+  margin-right: 16px;
 
   &:hover {
     color: var(--color-green);
@@ -61,6 +61,13 @@ export const LinksContainer = styled.div`
   justify-content: end;
 `
 
+export const CourseContainer = styled.div`
+  max-width: 320px;
+  max-height: 310px;
+  height: 100%;
+  padding: 10px 16px 16px 16px;
+`
+
 export const CourseImage = styled.img`
   height: 37px;
   display: block;
@@ -72,12 +79,7 @@ export const CourseTitle = styled.h3`
   font-weight: 700;
   color: var(--color-white);
 `
-export const CourseDetails = styled.h4`
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--color-black);
-  text-transform: uppercase;
-`
+
 export const CourseDetailsContainer = styled.div`
   margin-top: 20px;
   p {
@@ -87,9 +89,29 @@ export const CourseDetailsContainer = styled.div`
     margin-top: 4px;
   }
 `
-export const CourseContainer = styled.div`
-  max-width: 320px;
-  max-height: 310px;
-  height: 100%;
-  padding: 10px 16px 16px 16px;
+
+export const CourseDetails = styled.h4`
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-black);
+  text-transform: uppercase;
+`
+
+export const ContactContainer = styled.section`
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+`
+
+export const ContactLinkContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+`
+export const OtherContacts = styled.div`
+  width: 100%;
 `

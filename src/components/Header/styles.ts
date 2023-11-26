@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import styled from 'styled-components'
 
 export const Header = styled.header`
@@ -22,4 +23,7 @@ export const HeaderContainer = styled.div`
       color: var(--color-green);
     }
   }
+`
+export const HeaderLogo = styled(Link)`
+  text-decoration: none;
 `

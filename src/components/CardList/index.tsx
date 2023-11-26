@@ -1,13 +1,20 @@
 import Link from 'next/link'
-import { FaGithub } from 'react-icons/fa'
+import {
+  FaGithub,
+  FaWhatsapp,
+  FaLinkedin,
+  FaPhone,
+  FaEnvelope,
+} from 'react-icons/fa'
 import Card from '../Card'
 import Tag from '../Tag'
 import * as S from './styles'
 import Button from '../Button'
 import { roboto, firaSans } from '@/assets/fonts'
+import { LinkCustomizado } from '../SocialMediaBar/styles'
 
 type Props = {
-  layout: 'about' | 'project' | 'courses'
+  layout: 'about' | 'project' | 'courses' | 'contact'
 }
 
 export default function CardList({ layout }: Props) {
@@ -167,6 +174,60 @@ export default function CardList({ layout }: Props) {
               </S.CourseContainer>
             </Card>
           </S.CardsContainer>
+        </>
+      )}
+      {layout === 'contact' && (
+        <>
+          <S.ContactContainer>
+            <Card title="WHATSAPP">
+              <S.ContactLinkContainer>
+                <S.LinkCustomizado
+                  target="_blank"
+                  href="https://wa.me/5581997080397?text=Oi,%20vim%20pelo%20seu%20site."
+                >
+                  <FaWhatsapp size={60} />
+                </S.LinkCustomizado>
+              </S.ContactLinkContainer>
+            </Card>
+            <Card title="REDES SOCIAIS">
+              <>
+                <S.ContactLinkContainer>
+                  <S.LinkCustomizado
+                    target="_blank"
+                    href="https://github.com/Raul-Albuquerque"
+                  >
+                    <FaGithub size={60} />
+                  </S.LinkCustomizado>
+                  <S.LinkCustomizado
+                    target="_blank"
+                    href="https://linkedin.com/in/dev-raul-albuquerque"
+                  >
+                    <FaLinkedin size={60} />
+                  </S.LinkCustomizado>
+                </S.ContactLinkContainer>
+              </>
+            </Card>
+            <Card title="OUTROS CONTATOS">
+              <S.OtherContacts>
+                <S.ContactLinkContainer>
+                  <S.LinkCustomizado
+                    target="_blank"
+                    href="mailto:raulmalbuquerque2014@gmail.com"
+                  >
+                    <FaEnvelope size={30} />
+                    raulmalbuquerque2014@gmail.com
+                  </S.LinkCustomizado>
+                  <S.LinkCustomizado
+                    target="_blank"
+                    href="https://wa.me/5581997080397?text=Oi,%20vim%20pelo%20seu%20site."
+                  >
+                    <FaPhone size={30} />
+                    +55 81 99708-0397
+                  </S.LinkCustomizado>
+                </S.ContactLinkContainer>
+              </S.OtherContacts>
+            </Card>
+          </S.ContactContainer>
         </>
       )}
     </>
