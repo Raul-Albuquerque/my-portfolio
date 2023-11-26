@@ -1,10 +1,15 @@
 import * as S from './styles'
 
-type Props = {
+export type Props = {
   type: 'submit' | 'button'
   children: string
+  fontSize?: string
 }
 
-export default function Button({ type, children }: Props) {
-  return <S.Button type={type}>{children}</S.Button>
+export default function Button({ type, children, fontSize }: Props) {
+  return (
+    <S.Button fontSize={fontSize} type={type}>
+      {children}
+    </S.Button>
+  )
 }

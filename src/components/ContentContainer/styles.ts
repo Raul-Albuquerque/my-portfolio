@@ -9,7 +9,7 @@ type Padding = {
 export const MainContainer = styled.main`
   text-align: start;
   padding: 40px 60px;
-  height: 75vh;
+  height: 85vh;
   width: 80vw;
 `
 export const Text = styled.p<Padding>`

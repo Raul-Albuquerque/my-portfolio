@@ -6,7 +6,7 @@ import styled from 'styled-components'
 export const Nav = styled.nav`
   max-width: 10vw;
   width: 100%;
-  height: 75vh;
+  height: 85vh;
 `
 
 export const LinksContainer = styled.ul`

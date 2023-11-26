@@ -3,7 +3,6 @@ import NavBar from '@/components/Navbar'
 import SocialMediaBar from '@/components/SocialMediaBar'
 import { roboto } from '@/assets/fonts'
 import * as S from './styles'
-import Card from '@/components/Card'
 import CardList from '@/components/CardList'
 
 export default function About() {
@@ -23,7 +22,7 @@ export default function About() {
             do país, fortalecendo minha empatia, comunicação e capacidade de
             trabalhar em equipe.
           </S.P>
-          <CardList />
+          <CardList layout="about" />
         </>
       </ContentContainer>
       <NavBar />

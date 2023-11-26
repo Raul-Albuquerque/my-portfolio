@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 export const Aside = styled.aside`
   padding: 20px;
-  height: 75vh;
+  height: 85vh;
   width: 5vw;
   display: flex;
   align-items: end;
