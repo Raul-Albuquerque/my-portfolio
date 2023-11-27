@@ -25,6 +25,6 @@ export const CustomizedLinks = styled(Link)`
   color: var(--color-gray);
 
   &:hover {
-    color: var(--color-white);
+    color: ${(props) => props.theme.hoverColor};
   }
 `

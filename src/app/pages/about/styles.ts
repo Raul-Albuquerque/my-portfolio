@@ -7,6 +7,6 @@ export const P = styled.p`
   width: 100%;
   font-size: 16px;
   line-height: 32px;
-  color: var(--color-white);
+  color: ${(props) => props.theme.contrastColor};
   margin: 20px 0;
 `

@@ -20,7 +20,7 @@ export const Text = styled.p<Padding>`
   margin-bottom: 60px;
 
   span {
-    color: var(--color-white);
+    color: ${(props) => props.theme.contrastColor};
   }
 `
 
@@ -36,7 +36,7 @@ export const Detail = styled.img`
 
 export const SectionTitle = styled.h2`
   font-size: 48px;
-  color: var(--color-gray);
+  color: ${(props) => props.theme.sectionTitle};
   width: 150px;
   font-weight: 700;
 `

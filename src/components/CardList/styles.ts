@@ -28,7 +28,7 @@ export const ProjectContainer = styled.div`
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;
-    color: var(--color-white);
+    color: ${(props) => props.theme.contrastColor};
   }
 `
 
@@ -39,7 +39,7 @@ export const ProjectImage = styled.img`
   display: block;
 `
 export const LinkCustomizado = styled(Link)`
-  color: var(--color-white);
+  color: ${(props) => props.theme.contrastColor};
   font-size: 16px;
   height: 35px;
   margin-right: 16px;
@@ -77,7 +77,7 @@ export const CourseImage = styled.img`
 export const CourseTitle = styled.h3`
   font-size: 16px;
   font-weight: 700;
-  color: var(--color-white);
+  color: ${(props) => props.theme.contrastColor};
 `
 
 export const CourseDetailsContainer = styled.div`
@@ -85,7 +85,7 @@ export const CourseDetailsContainer = styled.div`
   p {
     font-size: 16px;
     font-weight: 400;
-    color: var(--color-white);
+    color: ${(props) => props.theme.contrastColor};
     margin-top: 4px;
   }
 `
