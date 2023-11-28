@@ -18,6 +18,7 @@ export const Text = styled.p<Padding>`
   font-weight: bold;
   padding-left: ${(props) => props.paddingL || '0'};
   margin-bottom: 60px;
+  text-transform: uppercase;
 
   span {
     color: ${(props) => props.theme.contrastColor};

@@ -25,8 +25,11 @@ export const LinkCustomizado = styled(Link)`
   color: var(--color-gray);
   margin-bottom: 20px;
   font-size: 16px;
+  transition: 0.5s;
 
   &:hover {
     color: var(--color-green);
+    transform: scale(1.2);
+    transition: 0.5s;
   }
 `

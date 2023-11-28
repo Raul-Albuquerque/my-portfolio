@@ -8,6 +8,12 @@ export const Card = styled.div`
   margin-top: 40px;
   border-radius: var(--border-radius);
   padding: 16px;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
 `
 export const Title = styled.h4`
   font-size: 16px;

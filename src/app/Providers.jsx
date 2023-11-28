@@ -2,9 +2,26 @@
 import styled, { ThemeProvider } from 'styled-components'
 import darkTheme from '../themes/dark'
 import lightTheme from '@/themes/light'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import { useState } from 'react'
 
 const Providers = ({ children }) => {
-  return <ThemeProvider theme={darkTheme}>{children}</ThemeProvider>
+  const [isDarkTheme, setIsDarkTheme] = useState(true)
+
+  function switchTheme() {
+    setIsDarkTheme(!isDarkTheme)
+  }
+
+  return (
+    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+      <Body>
+        <Header themeSwitch={switchTheme} />
+        {children}
+        <Footer />
+      </Body>
+    </ThemeProvider>
+  )
 }
 
 export default Providers

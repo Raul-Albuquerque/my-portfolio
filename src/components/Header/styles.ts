@@ -70,13 +70,13 @@ export const SlideContainer = styled.div`
 `
 export const Moon = styled.img`
   position: absolute;
-  width: 30px;
-  top: 5px;
-  left: 50px;
+  width: 20px;
+  top: 10px;
+  left: 60px;
 `
 export const Sun = styled.img`
   position: absolute;
-  width: 30px;
-  top: 5px;
-  left: 5px;
+  width: 20px;
+  top: 10px;
+  left: 10px;
 `

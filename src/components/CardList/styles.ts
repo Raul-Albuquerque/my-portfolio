@@ -16,7 +16,7 @@ export const TagsContainer = styled.div`
   width: 100%;
   margin-top: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   flex-wrap: wrap;
   gap: 8px;
 `
@@ -78,12 +78,14 @@ export const CourseTitle = styled.h3`
   font-size: 16px;
   font-weight: 700;
   color: ${(props) => props.theme.contrastColor};
+  text-transform: uppercase;
 `
 
 export const CourseDetailsContainer = styled.div`
   margin-top: 20px;
   p {
     font-size: 16px;
+    line-height: 24px;
     font-weight: 400;
     color: ${(props) => props.theme.contrastColor};
     margin-top: 4px;
@@ -98,16 +100,16 @@ export const CourseDetails = styled.h4`
 `
 
 export const ContactContainer = styled.section`
-  max-width: 600px;
+  max-width: 960px;
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 `
 
 export const ContactLinkContainer = styled.div`
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: space-around;
   margin-top: 10px;

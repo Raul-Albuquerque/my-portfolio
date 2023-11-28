@@ -5,15 +5,11 @@ import * as S from './styles'
 import { audiowide } from '../../assets/fonts'
 import Link from 'next/link'
 
-export default function Header() {
-  const [isLight, setIsLight] = React.useState(false)
+type Props = {
+  themeSwitch: () => void
+}
 
-  console.log('is light', isLight)
-
-  const handleCheck = () => {
-    setIsLight((prevState) => !prevState)
-  }
-
+export default function Header(props: Props) {
   return (
     <S.Header>
       <S.HeaderContainer className="container">
@@ -24,9 +20,9 @@ export default function Header() {
         </S.HeaderLogo>
         <S.SlideContainer>
           <input type="checkbox" name="theme" id="theme" />
-          <label htmlFor="theme" onClick={handleCheck}>
-            <S.Moon src="/moon.png" />
+          <label htmlFor="theme" onClick={props.themeSwitch}>
             <S.Sun src="/sun.png" />
+            <S.Moon src="/moon.png" />
           </label>
         </S.SlideContainer>
       </S.HeaderContainer>

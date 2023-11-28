@@ -1,14 +1,14 @@
 import * as S from './styles'
 
 export type Props = {
-  type: 'link' | 'button'
   children: string
   fontSize?: string
+  href: string
 }
 
-export default function Button({ type, children, fontSize }: Props) {
+export default function Button({ href, children, fontSize }: Props) {
   return (
-    <S.Button fontSize={fontSize} type={type}>
+    <S.Button href={href} fontSize={fontSize}>
       {children}
     </S.Button>
   )

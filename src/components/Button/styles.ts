@@ -5,62 +5,62 @@ import styled from 'styled-components'
 import { Props } from './index'
 import Link from 'next/link'
 
-export const Button = styled.button<Props>`
-  font-size: ${(props) => props.fontSize || '16px'};
-  padding: 0.7em 2.7em;
-  letter-spacing: 0.06em;
+export const Button = styled(Link)<Props>`
+  --border-radius: 15px;
+  --border-width: 4px;
+  appearance: none;
   position: relative;
-  font-family: inherit;
-  border-radius: 0.6em;
-  overflow: hidden;
-  transition: all 0.3s;
-  line-height: 1.4em;
-  cursor: pointer;
-  border: 2px solid var(--color-green);
-  background: linear-gradient(
-    to right,
-    rgba(27, 253, 156, 0.1) 1%,
-    transparent 40%,
-    transparent 60%,
-    rgba(27, 253, 156, 0.1) 100%
-  );
-  color: var(--color-green);
-  box-shadow:
-    inset 0 0 10px rgba(27, 253, 156, 0.4),
-    0 0 9px 3px rgba(27, 253, 156, 0.1);
+  padding: 1em 2em;
+  border: 0;
+  background-color: transparent;
+  font-family: 'Roboto', Arial, 'Segoe UI', sans-serif;
+  font-size: ${(props) => props.fontSize};
+  font-weight: 500;
+  color: ${(props) => props.theme.contrastColor};
+  z-index: 2;
+  box-sizing: border-box;
+  text-decoration: none;
 
-  &:hover {
-    color: #82ffc9;
-    box-shadow:
-      inset 0 0 10px rgba(27, 253, 156, 0.6),
-      0 0 9px 3px rgba(27, 253, 156, 0.2);
+  &:after {
+    box-sizing: border-box;
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(
+      #488cfb,
+      #29dbbc,
+      #ddf505,
+      #ff9f0e,
+      #e440bb,
+      #655adc,
+      #488cfb
+    );
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+    animation-play-state: paused;
+  }
 
-    &:before {
-      transform: translateX(15em);
+  &:hover::after {
+    animation-play-state: running;
+  }
+
+  @keyframes rotate-hue {
+    to {
+      filter: hue-rotate(1turn);
     }
   }
-`
-export const ButtonAsLink = styled(Link)<Props>`
-  font-size: 16px;
-  padding: 0.7em 2.7em;
-  letter-spacing: 0.06em;
-  position: relative;
-  font-family: inherit;
-  border-radius: 0.6em;
-  overflow: hidden;
-  transition: all 0.3s;
-  line-height: 1.4em;
-  cursor: pointer;
-  border: 2px solid var(--color-green);
-  background: linear-gradient(
-    to right,
-    rgba(27, 253, 156, 0.1) 1%,
-    transparent 40%,
-    transparent 60%,
-    rgba(27, 253, 156, 0.1) 100%
-  );
-  color: var(--color-green);
-  box-shadow:
-    inset 0 0 10px rgba(27, 253, 156, 0.4),
-    0 0 9px 3px rgba(27, 253, 156, 0.1);
 `
