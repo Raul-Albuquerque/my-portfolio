@@ -8,9 +8,12 @@ type Padding = {
 
 export const MainContainer = styled.main`
   text-align: start;
-  padding: 40px 60px;
-  height: 85vh;
-  width: 80vw;
+  max-height: 85vh;
+  height: 100%;
+  padding: 80px 40px;
+  max-width: 1140px;
+  width: 100%;
+  position: relative;
 `
 export const Text = styled.p<Padding>`
   font-size: 64px;
@@ -25,13 +28,11 @@ export const Text = styled.p<Padding>`
   }
 `
 
-export const TextContainer = styled.div`
-  height: 100%;
-`
+export const TextContainer = styled.div``
 
 export const Detail = styled.img`
   display: block;
-  padding-left: 50%;
+  padding-left: 54%;
   margin-top: -60px;
 `
 

@@ -15,7 +15,7 @@ export const Button = styled(Link)<Props>`
   background-color: transparent;
   font-family: 'Roboto', Arial, 'Segoe UI', sans-serif;
   font-size: ${(props) => props.fontSize};
-  font-weight: 500;
+  font-weight: 700;
   color: ${(props) => props.theme.contrastColor};
   z-index: 2;
   box-sizing: border-box;

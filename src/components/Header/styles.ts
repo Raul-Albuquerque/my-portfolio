@@ -5,8 +5,8 @@ import styled from 'styled-components'
 
 export const Header = styled.header`
   background-color: var(--color-black);
-  padding: 30px 0;
-  max-height: 10vh;
+  padding: 20px 0;
+  max-height: 100px;
   height: 100%;
 `
 export const HeaderContainer = styled.div`
@@ -16,7 +16,7 @@ export const HeaderContainer = styled.div`
 
   h1 {
     font-size: 32px;
-    line-height: 40px;
+    line-height: 60px;
     color: var(--color-white);
 
     span {
@@ -29,6 +29,7 @@ export const HeaderLogo = styled(Link)`
 `
 
 export const SlideContainer = styled.div`
+  height: 60px;
   label {
     width: 90px;
     height: 40px;

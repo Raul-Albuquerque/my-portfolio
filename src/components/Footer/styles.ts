@@ -6,7 +6,9 @@ export const Footer = styled.footer`
   background-color: var(--color-black);
   text-align: center;
   padding: 10px;
-  height: 5vh;
+  max-height: 40px;
+  height: 100%;
+  display: none;
 
   p {
     color: var(--color-white);
