@@ -25,27 +25,29 @@ export default function CardList({ layout }: Props) {
     <>
       {layout === 'about' && (
         <S.CardsContainer>
-          <Card title="Hard Skills">
+          <S.SkillCard>
+            <h4 className={firaSans.className}>hard Skills</h4>
             <S.TagsContainer>
               {HardSkills.map((e) => (
                 <Tag key={e.skill}>{e.skill}</Tag>
               ))}
             </S.TagsContainer>
-          </Card>
-          <Card title="Soft Skills">
+          </S.SkillCard>
+          <S.SkillCard>
+            <h4 className={firaSans.className}>Soft Skills</h4>
             <S.TagsContainer>
               {SoftSkills.map((e) => (
                 <Tag key={e.skill}>{e.skill}</Tag>
               ))}
             </S.TagsContainer>
-          </Card>
+          </S.SkillCard>
         </S.CardsContainer>
       )}
       {layout === 'project' && (
         <>
           <S.CardsContainer>
-            {}
-            <Card title="Projeto 1">
+            <S.ProjectCard>
+              <h4 className={firaSans.className}>Projeto 1</h4>
               <S.ProjectContainer>
                 <S.ProjectImage src="/projeto.png" />
                 <p className={roboto.className}>
@@ -63,8 +65,9 @@ export default function CardList({ layout }: Props) {
                   </Button>
                 </S.LinksContainer>
               </S.ProjectContainer>
-            </Card>
-            <Card title="Projeto 2">
+            </S.ProjectCard>
+            <S.ProjectCard>
+              <h4 className={firaSans.className}>Projeto 2</h4>
               <S.ProjectContainer>
                 <S.ProjectImage src="/projeto.png" />
                 <p className={roboto.className}>
@@ -82,26 +85,7 @@ export default function CardList({ layout }: Props) {
                   </Button>
                 </S.LinksContainer>
               </S.ProjectContainer>
-            </Card>
-            <Card title="Projeto 3">
-              <S.ProjectContainer>
-                <S.ProjectImage src="/projeto.png" />
-                <p className={roboto.className}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-                <S.TagsContainer>
-                  <Tag>JavaScript</Tag>
-                </S.TagsContainer>
-                <S.LinksContainer>
-                  <S.LinkCustomizado href="https://github.com/Raul-Albuquerque">
-                    <FaGithub size={32} />
-                  </S.LinkCustomizado>
-                  <Button fontSize="10px" href="/">
-                    VER PROJETO
-                  </Button>
-                </S.LinksContainer>
-              </S.ProjectContainer>
-            </Card>
+            </S.ProjectCard>
             <S.LinkCustomizado className="as-btn see-more" href="/">
               Ver mais
             </S.LinkCustomizado>

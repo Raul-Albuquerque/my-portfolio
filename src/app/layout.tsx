@@ -3,6 +3,8 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Providers, { Body } from './Providers'
+import SocialMediaBar from '@/components/SocialMediaBar'
+import NavBar from '@/components/Navbar'
 
 export const metadata: Metadata = {
   title: 'Raul Albuquerque - Desenvolvedor Front-end',
@@ -16,7 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <Providers>{children}</Providers>
+      <Providers>
+        <div className="main-container">
+          <SocialMediaBar />
+          {children}
+          <NavBar />
+        </div>
+      </Providers>
     </html>
   )
 }

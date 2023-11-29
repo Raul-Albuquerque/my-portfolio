@@ -9,8 +9,8 @@ type Padding = {
 export const MainContainer = styled.main`
   text-align: start;
   max-height: 85vh;
-  height: 100%;
-  padding: 80px 40px;
+  height: 85vh;
+  padding: 60px 40px;
   max-width: 1140px;
   width: 100%;
   position: relative;
@@ -37,8 +37,8 @@ export const Detail = styled.img`
 `
 
 export const SectionTitle = styled.h2`
-  font-size: 48px;
+  font-size: 40px;
   color: ${(props) => props.theme.sectionTitle};
-  width: 150px;
+  width: 200px;
   font-weight: 700;
 `

@@ -5,7 +5,7 @@ export const Card = styled.div`
   width: 100%;
   height: 100%;
   background-color: ${(props) => props.theme.sectionTitle};
-  margin-top: 40px;
+  margin-top: 10px;
   border-radius: var(--border-radius);
   padding: 16px;
   transition: 0.5s;

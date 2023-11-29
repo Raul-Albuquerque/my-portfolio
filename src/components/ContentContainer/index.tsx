@@ -37,7 +37,7 @@ export default function ContentContainer({ children, title, type }: Props) {
           <S.SectionTitle className={firaSans.className}>
             {title}
           </S.SectionTitle>
-          {children}
+          <div className="container">{children}</div>
         </S.MainContainer>
       )}
     </>

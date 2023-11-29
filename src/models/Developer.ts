@@ -117,14 +117,6 @@ export const Projects = [
     url: 'url do projeto',
     gitHubUrl: 'url do projeto no github',
   },
-  {
-    id: 3,
-    name: 'projeto 3',
-    image: 'url da imagem',
-    tech: ['html', 'CSS', 'JS'],
-    url: 'url do projeto',
-    gitHubUrl: 'url do projeto no github',
-  },
 ]
 
 export const Courses = [

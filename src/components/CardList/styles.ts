@@ -6,12 +6,35 @@ import Link from 'next/link'
 export const CardsContainer = styled.div`
   display: flex;
   align-items: start;
-  justify-content: space-between;
-  gap: 60px;
-  width: 100%;
-  max-height: 560px;
+  justify-content: space-around;
   position: relative;
+  max-width: 1024px;
+  width: 100%;
 `
+export const SkillCard = styled.section`
+  max-width: 460px;
+  width: 100%;
+  max-height: 200px;
+  height: 100%;
+  background-color: ${(props) => props.theme.sectionTitle};
+  border-radius: var(--border-radius);
+  padding: 16px;
+  transition: 1s;
+
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: ${(props) => props.theme.contrastColor};
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &:hover {
+    background-color: var(--color-green);
+    transition: 1s;
+  }
+`
+
 export const TagsContainer = styled.div`
   width: 100%;
   margin-top: 10px;
@@ -20,9 +43,36 @@ export const TagsContainer = styled.div`
   flex-wrap: wrap;
   gap: 8px;
 `
-export const ProjectContainer = styled.div`
-  display: block;
+
+export const ProjectCard = styled.section`
+  max-width: 360px;
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
+  background-color: ${(props) => props.theme.sectionTitle};
+  border-radius: var(--border-radius);
   padding: 16px;
+  transition: 1s;
+  margin-top: 20px;
+
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: ${(props) => props.theme.contrastColor};
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+`
+
+export const ProjectContainer = styled.div`
+  padding: 8px;
+  width: 100%;
+  height: 100%;
 
   p {
     font-size: 12px;

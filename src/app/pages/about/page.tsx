@@ -8,20 +8,16 @@ import { Developer } from '@/models/Developer'
 
 export default function About() {
   return (
-    <div className="main-container">
-      <SocialMediaBar />
-      <ContentContainer title="SOBRE MIM">
-        <>
-          {Developer.map((e) => (
-            <S.P key={e.about} className={roboto.className}>
-              {e.about}
-            </S.P>
-          ))}
+    <ContentContainer title="SOBRE MIM">
+      <>
+        {Developer.map((e) => (
+          <S.P key={e.about} className={roboto.className}>
+            {e.about}
+          </S.P>
+        ))}
 
-          <CardList layout="about" />
-        </>
-      </ContentContainer>
-      <NavBar />
-    </div>
+        <CardList layout="about" />
+      </>
+    </ContentContainer>
   )
 }

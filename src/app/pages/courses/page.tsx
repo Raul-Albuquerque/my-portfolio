@@ -5,14 +5,8 @@ import SocialMediaBar from '@/components/SocialMediaBar'
 
 export default function Courses() {
   return (
-    <div className="main-container">
-      <SocialMediaBar />
-      <ContentContainer title="MEUS CURSOS">
-        <>
-          <CardList layout="courses" />
-        </>
-      </ContentContainer>
-      <NavBar />
-    </div>
+    <ContentContainer title="MEUS CURSOS">
+      <CardList layout="courses" />
+    </ContentContainer>
   )
 }

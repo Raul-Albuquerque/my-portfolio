@@ -6,7 +6,7 @@ import styled from 'styled-components'
 export const Nav = styled.nav`
   max-width: 160px;
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   background-color: blue;
   padding: 20px;
 `
