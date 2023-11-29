@@ -103,19 +103,83 @@ export const SoftSkills = [
 export const Projects = [
   {
     id: 1,
-    name: 'projeto 1',
-    image: 'url da imagem',
-    tech: ['html', 'CSS', 'JS'],
-    url: 'url do projeto',
-    gitHubUrl: 'url do projeto no github',
+    name: 'Meus Contatos',
+    image: '/meusContatos.png',
+    description:
+      'Lista de contatos que permite a inclusão de nome, email, telefone e avatar.',
+    techs: [
+      {
+        tech: 'HTML',
+      },
+      {
+        tech: 'CSS',
+      },
+      {
+        tech: 'TypeScript',
+      },
+      {
+        tech: 'React',
+      },
+      {
+        tech: 'Figma',
+      },
+    ],
+    url: 'https://meus-contatos-react-seven.vercel.app/',
+    gitHubUrl: 'https://github.com/Raul-Albuquerque/meus_contatos_react',
   },
   {
     id: 2,
-    name: 'projeto 2',
-    image: 'url da imagem',
-    tech: ['html', 'CSS', 'JS'],
-    url: 'url do projeto',
-    gitHubUrl: 'url do projeto no github',
+    name: 'IMC Precision',
+    image: '/IMCPrecision.png',
+    description: 'Calculadora de Índice de Massa Corporal (IMC).',
+    techs: [
+      {
+        tech: 'HTML',
+      },
+      {
+        tech: 'CSS',
+      },
+      {
+        tech: 'JavaScript',
+      },
+      {
+        tech: 'Vite',
+      },
+      {
+        tech: 'React',
+      },
+      {
+        tech: 'Figma',
+      },
+    ],
+    url: 'https://calculadora-imc-liart-tau.vercel.app/',
+    gitHubUrl: 'https://github.com/Raul-Albuquerque/calculadora_IMC',
+  },
+  {
+    id: 3,
+    name: 'Calculadora Vue',
+    image: '/calculadoraVue.png',
+    description:
+      'Calculadora que realiza adição, subtração, multiplicação e divisão.',
+    techs: [
+      {
+        tech: 'HTML',
+      },
+      {
+        tech: 'CSS',
+      },
+      {
+        tech: 'JavaScript',
+      },
+      {
+        tech: 'Vue.JS',
+      },
+      {
+        tech: 'Bootstrap',
+      },
+    ],
+    url: 'https://calculadora-vue-delta.vercel.app/',
+    gitHubUrl: 'https://github.com/Raul-Albuquerque/calculadora_vue',
   },
 ]
 

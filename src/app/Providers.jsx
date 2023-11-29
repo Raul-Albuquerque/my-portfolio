@@ -3,7 +3,6 @@ import styled, { ThemeProvider } from 'styled-components'
 import darkTheme from '../themes/dark'
 import lightTheme from '@/themes/light'
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 import { useState } from 'react'
 
 const Providers = ({ children }) => {
@@ -18,7 +17,6 @@ const Providers = ({ children }) => {
       <Body>
         <Header themeSwitch={switchTheme} />
         {children}
-        <Footer />
       </Body>
     </ThemeProvider>
   )

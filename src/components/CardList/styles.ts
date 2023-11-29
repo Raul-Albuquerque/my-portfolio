@@ -1,14 +1,13 @@
 'use client'
 import styled from 'styled-components'
-import Button from '../Button'
 import Link from 'next/link'
 
 export const CardsContainer = styled.div`
   display: flex;
   align-items: start;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 10px;
   position: relative;
-  max-width: 1024px;
   width: 100%;
 `
 export const SkillCard = styled.section`
@@ -37,7 +36,8 @@ export const SkillCard = styled.section`
 
 export const TagsContainer = styled.div`
   width: 100%;
-  margin-top: 10px;
+  margin-top: 8px;
+  margin-bottom: 16px;
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
@@ -54,6 +54,7 @@ export const ProjectCard = styled.section`
   padding: 16px;
   transition: 1s;
   margin-top: 20px;
+  margin-right: 20px;
 
   h4 {
     font-size: 16px;
@@ -78,15 +79,17 @@ export const ProjectContainer = styled.div`
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;
+    margin-top: 8px;
+    font-weight: 700;
     color: ${(props) => props.theme.contrastColor};
   }
 `
 
 export const ProjectImage = styled.img`
-  width: 300px;
-  height: 200px;
-  margin-bottom: 8px;
+  width: 240px;
+  height: 137px;
   display: block;
+  margin: 0 auto;
 `
 export const LinkCustomizado = styled(Link)`
   color: ${(props) => props.theme.contrastColor};

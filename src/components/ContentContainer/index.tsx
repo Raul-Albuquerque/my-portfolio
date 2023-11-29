@@ -1,10 +1,11 @@
 import Button from '../Button'
+import CardList from '../CardList'
 import * as S from './styles'
-import { firaSans } from '@/assets/fonts'
+import { firaSans, roboto } from '@/assets/fonts'
 import { Developer } from '@/models/Developer'
 
 type Props = {
-  type?: 'home'
+  type?: 'home' | 'about' | 'projects'
   title?: string
   children?: JSX.Element
 }
@@ -12,10 +13,10 @@ type Props = {
 export default function ContentContainer({ children, title, type }: Props) {
   return (
     <>
-      {type === 'home' ? (
+      {type === 'home' && (
         <S.MainContainer>
           {Developer.map((info) => (
-            <S.TextContainer key={info.name}>
+            <div key={info.name}>
               <S.Text className={firaSans.className} paddingL="60px">
                 OLÁ, SEJA BEM-VINDO(A)!
               </S.Text>
@@ -26,18 +27,36 @@ export default function ContentContainer({ children, title, type }: Props) {
                 <span>DESENVOLVEDOR FRONT-END</span>
               </S.Text>
               <S.Detail src="/detalhe.svg" />
-            </S.TextContainer>
+            </div>
           ))}
           <Button href="/pages/contact" fontSize="16px">
             ENTRE EM CONTATO
           </Button>
         </S.MainContainer>
-      ) : (
+      )}
+      {type === 'about' && (
         <S.MainContainer>
           <S.SectionTitle className={firaSans.className}>
             {title}
           </S.SectionTitle>
-          <div className="container">{children}</div>
+          <div className="container">
+            {Developer.map((e) => (
+              <S.P key={e.about} className={roboto.className}>
+                {e.about}
+              </S.P>
+            ))}
+            <CardList layout="about" />
+          </div>
+        </S.MainContainer>
+      )}
+      {type === 'projects' && (
+        <S.MainContainer>
+          <S.SectionTitle className={firaSans.className}>
+            {title}
+          </S.SectionTitle>
+          <div className="container">
+            <CardList layout="project" />
+          </div>
         </S.MainContainer>
       )}
     </>

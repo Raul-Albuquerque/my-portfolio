@@ -28,8 +28,6 @@ export const Text = styled.p<Padding>`
   }
 `
 
-export const TextContainer = styled.div``
-
 export const Detail = styled.img`
   display: block;
   padding-left: 54%;
@@ -41,4 +39,15 @@ export const SectionTitle = styled.h2`
   color: ${(props) => props.theme.sectionTitle};
   width: 200px;
   font-weight: 700;
+`
+
+export const P = styled.p`
+  max-width: 1140px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: ${(props) => props.theme.contrastColor};
+  margin: 20px 0;
+  padding-left: 20px;
 `

@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import {
   FaGithub,
   FaWhatsapp,
@@ -13,8 +12,13 @@ import Tag from '../Tag'
 import * as S from './styles'
 import Button from '../Button'
 import { roboto, firaSans } from '@/assets/fonts'
-import { LinkCustomizado } from '../SocialMediaBar/styles'
-import { HardSkills, SoftSkills, Courses, Contacts } from '@/models/Developer'
+import {
+  HardSkills,
+  SoftSkills,
+  Courses,
+  Contacts,
+  Projects,
+} from '@/models/Developer'
 
 type Props = {
   layout: 'about' | 'project' | 'courses' | 'contact'
@@ -46,49 +50,28 @@ export default function CardList({ layout }: Props) {
       {layout === 'project' && (
         <>
           <S.CardsContainer>
-            <S.ProjectCard>
-              <h4 className={firaSans.className}>Projeto 1</h4>
-              <S.ProjectContainer>
-                <S.ProjectImage src="/projeto.png" />
-                <p className={roboto.className}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-                <S.TagsContainer>
-                  <Tag>JavaScript</Tag>
-                </S.TagsContainer>
-                <S.LinksContainer>
-                  <S.LinkCustomizado href="https://github.com/Raul-Albuquerque">
-                    <FaGithub size={32} />
-                  </S.LinkCustomizado>
-                  <Button fontSize="10px" href="/">
-                    VER PROJETO
-                  </Button>
-                </S.LinksContainer>
-              </S.ProjectContainer>
-            </S.ProjectCard>
-            <S.ProjectCard>
-              <h4 className={firaSans.className}>Projeto 2</h4>
-              <S.ProjectContainer>
-                <S.ProjectImage src="/projeto.png" />
-                <p className={roboto.className}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-                <S.TagsContainer>
-                  <Tag>JavaScript</Tag>
-                </S.TagsContainer>
-                <S.LinksContainer>
-                  <S.LinkCustomizado href="https://github.com/Raul-Albuquerque">
-                    <FaGithub size={32} />
-                  </S.LinkCustomizado>
-                  <Button fontSize="10px" href="/">
-                    VER PROJETO
-                  </Button>
-                </S.LinksContainer>
-              </S.ProjectContainer>
-            </S.ProjectCard>
-            <S.LinkCustomizado className="as-btn see-more" href="/">
-              Ver mais
-            </S.LinkCustomizado>
+            {Projects.map((project) => (
+              <S.ProjectCard key={project.id}>
+                <h4 className={firaSans.className}>{project.name}</h4>
+                <S.ProjectContainer>
+                  <S.ProjectImage src={project.image} />
+                  <p className={roboto.className}>{project.description}</p>
+                  <S.TagsContainer>
+                    {project.techs.map((item) => (
+                      <Tag key={item.tech}>{item.tech}</Tag>
+                    ))}
+                  </S.TagsContainer>
+                  <S.LinksContainer>
+                    <S.LinkCustomizado href={project.gitHubUrl}>
+                      <FaGithub size={32} />
+                    </S.LinkCustomizado>
+                    <Button fontSize="10px" href={project.url}>
+                      VER PROJETO
+                    </Button>
+                  </S.LinksContainer>
+                </S.ProjectContainer>
+              </S.ProjectCard>
+            ))}
           </S.CardsContainer>
         </>
       )}
