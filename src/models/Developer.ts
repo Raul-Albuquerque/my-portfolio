@@ -80,9 +80,6 @@ const Developer = [
         skill: 'responsabilidade',
       },
       {
-        skill: 'capacidade de solucionar problemas',
-      },
-      {
         skill: 'resiliência',
       },
       {
@@ -92,7 +89,7 @@ const Developer = [
         skill: 'disciplina',
       },
       {
-        skill: 'trabalho em equipe',
+        skill: 'capacidade de trabalhar em equipe',
       },
     ],
     projects: [

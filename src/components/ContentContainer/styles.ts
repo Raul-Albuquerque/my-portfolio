@@ -7,7 +7,7 @@ type Padding = {
 }
 
 export const MainContainer = styled.main`
-  text-align: start;
+  text-align: center;
   max-height: 85vh;
   height: 85vh;
   height: 85dvh;
@@ -15,6 +15,10 @@ export const MainContainer = styled.main`
   max-width: 1140px;
   width: 100%;
   position: relative;
+
+  @media (max-width: 768px) {
+    padding: 20px 10px;
+  }
 `
 export const Text = styled.p<Padding>`
   font-size: 64px;
@@ -24,6 +28,12 @@ export const Text = styled.p<Padding>`
   margin-bottom: 60px;
   text-transform: uppercase;
 
+  @media (max-width: 768px) {
+    font-size: 32px;
+    margin-bottom: 60px;
+    padding-left: 20px;
+  }
+
   span {
     color: ${(props) => props.theme.contrastColor};
   }
@@ -31,8 +41,12 @@ export const Text = styled.p<Padding>`
 
 export const Detail = styled.img`
   display: block;
-  padding-left: 54%;
+  padding-left: 50%;
   margin-top: -60px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const SectionTitle = styled.h2`
@@ -40,6 +54,11 @@ export const SectionTitle = styled.h2`
   color: ${(props) => props.theme.sectionTitle};
   width: 200px;
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    padding-left: 20px;
+  }
 `
 
 export const P = styled.p`
@@ -51,4 +70,11 @@ export const P = styled.p`
   color: ${(props) => props.theme.contrastColor};
   margin: 20px 0;
   padding-left: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    padding-left: 8px;
+  }
 `

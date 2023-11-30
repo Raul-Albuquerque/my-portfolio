@@ -28,6 +28,16 @@
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  * {
+    overflow-y:visible;
+  }
+  
+  .container {
+    width: 90%;
+  }
+}
+
 .main-container {
   display: flex;
   align-items: center;

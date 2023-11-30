@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import * as S from './styles'
 import { firaSans } from '@/assets/fonts'
 

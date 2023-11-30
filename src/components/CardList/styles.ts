@@ -9,6 +9,7 @@ export const CardsContainer = styled.div`
   gap: 10px;
   position: relative;
   width: 100%;
+  flex-wrap: wrap;
 `
 export const SkillCard = styled.section`
   max-width: 460px;
@@ -32,6 +33,14 @@ export const SkillCard = styled.section`
     background-color: var(--color-green);
     transition: 1s;
   }
+
+  @media (max-width: 768px) {
+    padding: 8px;
+    h4 {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+  }
 `
 
 export const TagsContainer = styled.div`
@@ -42,6 +51,10 @@ export const TagsContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 8px;
+  }
 `
 
 export const ProjectCard = styled.section`
@@ -68,6 +81,10 @@ export const ProjectCard = styled.section`
     transform: scale(1.1);
     transition: 0.5s;
     margin-left: 20px;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
   }
 `
 
@@ -108,11 +125,19 @@ export const LinkCustomizado = styled(Link)`
     bottom: 0;
     height: auto;
   }
+
+  @media (max-width: 768px) {
+    margin-right: 8px;
+  }
 `
 export const LinksContainer = styled.div`
   display: flex;
   align-items: end;
   justify-content: end;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `
 
 export const CourseCard = styled.section`
@@ -139,6 +164,14 @@ export const CourseCard = styled.section`
     transform: scale(1.1);
     transition: 0.5s;
     margin-left: 20px;
+  }
+
+  @media (max-width: 768px) {
+    overflow-y: hidden;
+    max-height: 280px;
+    h4 {
+      font-size: 12px;
+    }
   }
 `
 
@@ -169,6 +202,10 @@ export const CourseDetailsContainer = styled.div`
     line-height: 24px;
     font-weight: 400;
     color: ${(props) => props.theme.contrastColor};
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 `
 
@@ -205,6 +242,18 @@ export const ContactCard = styled.section`
     transition: 0.5s;
     margin-left: 20px;
   }
+
+  @media (max-width: 768px) {
+    max-width: 90px;
+    max-height: 140px;
+    margin-top: 0px;
+    padding: 8px;
+
+    h4 {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+  }
 `
 
 export const ContactContainer = styled.section`
@@ -212,6 +261,12 @@ export const ContactContainer = styled.section`
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    justify-content: start;
+    gap: 8px;
+    margin-top: 40px;
+  }
 `
 
 export const ContactLinkContainer = styled.div`

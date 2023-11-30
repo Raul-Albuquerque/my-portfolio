@@ -29,7 +29,7 @@ export default function ContentContainer({ children, title, type }: Props) {
               <S.Detail src="/detalhe.svg" />
             </div>
           ))}
-          <Button href="/pages/contact" fontSize="16px">
+          <Button type="home" href="/pages/contact" fontSize="16px">
             ENTRE EM CONTATO
           </Button>
         </S.MainContainer>

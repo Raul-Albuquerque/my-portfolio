@@ -60,7 +60,11 @@ export default function CardList({ layout }: Props) {
                         <S.LinkCustomizado href={project.gitHubUrl}>
                           <FaGithub size={32} />
                         </S.LinkCustomizado>
-                        <Button fontSize="10px" href={project.url}>
+                        <Button
+                          type="project"
+                          fontSize="10px"
+                          href={project.url}
+                        >
                           VER PROJETO
                         </Button>
                       </S.LinksContainer>

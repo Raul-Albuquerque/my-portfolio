@@ -11,6 +11,12 @@ export const Tag = styled.div`
   font-weight: bold;
   text-transform: uppercase;
 
+  @media (max-width: 768px) {
+    padding: 4px 4px;
+    color: var(--color-white);
+    font-size: 8px;
+  }
+
   &:hover {
     transform: scale(1.1);
   }

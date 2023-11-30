@@ -9,6 +9,10 @@ export const Nav = styled.nav`
   height: 85vh;
   height: 85dvh;
   padding: 20px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const LinksContainer = styled.ul`

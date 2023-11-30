@@ -63,4 +63,24 @@ export const Button = styled(Link)<Props>`
       filter: hue-rotate(1turn);
     }
   }
+
+  @media (max-width: 768px) {
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    padding: 2em 2em;
+    width: 200px;
+    margin: 0 auto;
+  }
+`
+
+export const ProjectButton = styled(Button)`
+  font-size: 12px;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    font-size: 8px;
+    display: inline-block;
+    padding: 2em 2em;
+  }
 `

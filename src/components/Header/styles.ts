@@ -19,6 +19,11 @@ export const HeaderContainer = styled.div`
     line-height: 60px;
     color: var(--color-white);
 
+    @media (max-width: 768px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
     span {
       color: var(--color-green);
     }
@@ -39,6 +44,12 @@ export const SlideContainer = styled.div`
     position: relative;
     cursor: pointer;
 
+    @media (max-width: 768px) {
+      width: 50px;
+      height: 20px;
+      border-radius: 20px;
+    }
+
     &:after {
       content: '';
       width: 40px;
@@ -49,6 +60,11 @@ export const SlideContainer = styled.div`
       background: var(--color-white);
       border-radius: 20px;
       transition: 1s;
+
+      @media (max-width: 768px) {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 
@@ -66,6 +82,10 @@ export const SlideContainer = styled.div`
       transform: translateX(-100%);
       background-color: var(--color-gray);
       transition: 1s;
+
+      @media (max-width: 768px) {
+        left: 50px;
+      }
     }
   }
 `
@@ -74,10 +94,23 @@ export const Moon = styled.img`
   width: 20px;
   top: 10px;
   left: 60px;
+
+  @media (max-width: 768px) {
+    width: 10px;
+    height: 10px;
+    left: 30px;
+    top: 5px;
+  }
 `
 export const Sun = styled.img`
   position: absolute;
   width: 20px;
   top: 10px;
   left: 10px;
+
+  @media (max-width: 768px) {
+    width: 10px;
+    height: 10px;
+    top: 5px;
+  }
 `

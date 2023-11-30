@@ -11,6 +11,10 @@ export const Aside = styled.aside`
   width: 100%;
   display: flex;
   align-items: end;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 export const SocialMediaList = styled.ul`
   color: var(--color-gray);
