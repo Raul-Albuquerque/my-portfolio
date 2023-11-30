@@ -72,6 +72,10 @@ export const Button = styled(Link)<Props>`
     width: 200px;
     margin: 0 auto;
   }
+
+  @media (min-width: 2500px) {
+    font-size: 24px;
+  }
 `
 
 export const ProjectButton = styled(Button)`

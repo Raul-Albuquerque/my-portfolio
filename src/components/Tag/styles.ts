@@ -11,7 +11,7 @@ export const Tag = styled.div`
   font-weight: bold;
   text-transform: uppercase;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     padding: 4px 8px;
     color: var(--color-white);
     font-size: 12px;

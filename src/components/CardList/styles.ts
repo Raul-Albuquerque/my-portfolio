@@ -19,7 +19,29 @@ export const CardsContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 `
+
+export const CardsContainerAbout = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  position: relative;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+`
+
 export const SkillCard = styled.section`
   max-width: 460px;
   width: 100%;
@@ -43,7 +65,7 @@ export const SkillCard = styled.section`
     transition: 1s;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     padding: 8px;
     h4 {
       font-size: 12px;
@@ -60,9 +82,6 @@ export const TagsContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
-
-  @media (max-width: 768px) {
-  }
 `
 
 export const ProjectCard = styled.section`
@@ -86,13 +105,7 @@ export const ProjectCard = styled.section`
     margin-bottom: 16px;
   }
 
-  &:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-    margin-left: 20px;
-  }
-
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     max-height: 360px;
     overflow-y: hidden;
     margin-top: 16px;
@@ -168,12 +181,11 @@ export const CourseCard = styled.section`
   }
 
   &:hover {
-    transform: scale(1.1);
+    background-color: var(--color-green);
     transition: 0.5s;
-    margin-left: 20px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     max-height: 360px;
     overflow-y: hidden;
     margin-top: 16px;
@@ -212,7 +224,7 @@ export const CourseDetailsContainer = styled.div`
     font-weight: 400;
     color: ${(props) => props.theme.contrastColor};
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       font-size: 12px;
     }
   }
@@ -225,6 +237,10 @@ export const CourseDetails = styled.h5`
   color: var(--color-black);
   text-transform: uppercase;
   margin-bottom: 4px;
+
+  @media (max-width: 1024px) {
+    font-size: 12px;
+  }
 `
 
 export const ContactCard = styled.section`

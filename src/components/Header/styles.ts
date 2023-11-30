@@ -44,7 +44,7 @@ export const SlideContainer = styled.div`
     position: relative;
     cursor: pointer;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       width: 50px;
       height: 20px;
       border-radius: 20px;
@@ -61,7 +61,7 @@ export const SlideContainer = styled.div`
       border-radius: 20px;
       transition: 1s;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1024px) {
         width: 20px;
         height: 20px;
       }
@@ -83,7 +83,7 @@ export const SlideContainer = styled.div`
       background-color: var(--color-gray);
       transition: 1s;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1024px) {
         left: 50px;
       }
     }
@@ -95,7 +95,7 @@ export const Moon = styled.img`
   top: 10px;
   left: 60px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     width: 10px;
     height: 10px;
     left: 30px;
@@ -108,7 +108,7 @@ export const Sun = styled.img`
   top: 10px;
   left: 10px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     width: 10px;
     height: 10px;
     top: 5px;

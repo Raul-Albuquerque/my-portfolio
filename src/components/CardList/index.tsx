@@ -23,7 +23,7 @@ export default function CardList({ layout }: Props) {
       {Developer.map((info) => (
         <>
           {layout === 'about' && (
-            <S.CardsContainer key={info.name}>
+            <S.CardsContainerAbout key={info.name} className="about">
               <S.SkillCard>
                 <h4 className={firaSans.className}>hard Skills</h4>
                 <S.TagsContainer>
@@ -40,7 +40,7 @@ export default function CardList({ layout }: Props) {
                   ))}
                 </S.TagsContainer>
               </S.SkillCard>
-            </S.CardsContainer>
+            </S.CardsContainerAbout>
           )}
           {layout === 'project' && (
             <>

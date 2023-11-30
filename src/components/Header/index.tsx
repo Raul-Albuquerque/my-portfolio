@@ -3,7 +3,6 @@
 import React, { useState } from 'react'
 import * as S from './styles'
 import { audiowide, firaSans } from '../../assets/fonts'
-import Link from 'next/link'
 
 type Props = {
   themeSwitch: () => void

@@ -7,7 +7,7 @@ type Padding = {
 }
 
 export const MainContainer = styled.main`
-  text-align: center;
+  text-align: left;
   max-height: 85vh;
   height: 85vh;
   height: 85dvh;
@@ -18,8 +18,22 @@ export const MainContainer = styled.main`
 
   @media (max-width: 768px) {
     padding: 20px 10px;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding: 20px 10px;
+    height: 100%;
+    text-align: center;
+  }
+
+  @media (min-width: 2500px) {
+    max-width: 1440px;
+    padding: 180px 70px;
+    width: 100%;
   }
 `
+
 export const Text = styled.p<Padding>`
   font-size: 64px;
   color: var(--color-gray);
@@ -28,10 +42,15 @@ export const Text = styled.p<Padding>`
   margin-bottom: 60px;
   text-transform: uppercase;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     font-size: 32px;
     margin-bottom: 60px;
     padding-left: 20px;
+  }
+
+  @media (min-width: 2500px) {
+    font-size: 72px;
+    margin-bottom: 80px;
   }
 
   span {
@@ -41,11 +60,13 @@ export const Text = styled.p<Padding>`
 
 export const Detail = styled.img`
   display: block;
-  padding-left: 50%;
+  padding-left: 54%;
   margin-top: -60px;
+  margin-bottom: 60px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: none;
+    margin-bottom: 0px;
   }
 `
 
@@ -67,15 +88,15 @@ export const P = styled.p`
   width: 100%;
   font-size: 16px;
   line-height: 32px;
-  text-align: center;
+  text-align: left;
   color: ${(props) => props.theme.contrastColor};
   margin: 20px 0;
-  padding-left: 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     font-size: 12px;
     line-height: 18px;
     text-align: left;
     padding-left: 8px;
+    text-align: center;
   }
 `
