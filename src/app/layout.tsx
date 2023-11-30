@@ -7,6 +7,9 @@ import NavBar from '@/components/Navbar'
 export const metadata: Metadata = {
   title: 'Raul Albuquerque - Desenvolvedor Front-end',
   description: 'FrontEnd Developer',
+  icons: {
+    icon: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({
