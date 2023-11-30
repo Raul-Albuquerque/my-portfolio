@@ -7,10 +7,9 @@ import Developer from '@/models/Developer'
 type Props = {
   type?: 'home' | 'about' | 'projects' | 'courses' | 'contact'
   title?: string
-  children?: JSX.Element
 }
 
-export default function ContentContainer({ children, title, type }: Props) {
+export default function ContentContainer({ title, type }: Props) {
   return (
     <>
       {type === 'home' && (
