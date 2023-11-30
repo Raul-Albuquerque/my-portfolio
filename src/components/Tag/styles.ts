@@ -10,4 +10,8 @@ export const Tag = styled.div`
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `

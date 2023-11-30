@@ -2,10 +2,10 @@ import Button from '../Button'
 import CardList from '../CardList'
 import * as S from './styles'
 import { firaSans, roboto } from '@/assets/fonts'
-import { Developer } from '@/models/Developer'
+import Developer from '@/models/Developer'
 
 type Props = {
-  type?: 'home' | 'about' | 'projects'
+  type?: 'home' | 'about' | 'projects' | 'courses' | 'contact'
   title?: string
   children?: JSX.Element
 }
@@ -56,6 +56,26 @@ export default function ContentContainer({ children, title, type }: Props) {
           </S.SectionTitle>
           <div className="container">
             <CardList layout="project" />
+          </div>
+        </S.MainContainer>
+      )}
+      {type === 'courses' && (
+        <S.MainContainer>
+          <S.SectionTitle className={firaSans.className}>
+            {title}
+          </S.SectionTitle>
+          <div className="container">
+            <CardList layout="courses" />
+          </div>
+        </S.MainContainer>
+      )}
+      {type === 'contact' && (
+        <S.MainContainer>
+          <S.SectionTitle className={firaSans.className}>
+            {title}
+          </S.SectionTitle>
+          <div className="container">
+            <CardList layout="contact" />
           </div>
         </S.MainContainer>
       )}

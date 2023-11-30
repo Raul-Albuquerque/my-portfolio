@@ -6,11 +6,11 @@ import styled from 'styled-components'
 export const Aside = styled.aside`
   padding: 40px;
   height: 85vh;
+  height: 85dvh;
   max-width: 140px;
   width: 100%;
   display: flex;
   align-items: end;
-  background-color: red;
 `
 export const SocialMediaList = styled.ul`
   color: var(--color-gray);

@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   max-width: 160px;
   width: 100%;
   height: 85vh;
-  background-color: blue;
+  height: 85dvh;
   padding: 20px;
 `
 

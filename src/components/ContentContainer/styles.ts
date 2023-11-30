@@ -10,6 +10,7 @@ export const MainContainer = styled.main`
   text-align: start;
   max-height: 85vh;
   height: 85vh;
+  height: 85dvh;
   padding: 60px 40px;
   max-width: 1140px;
   width: 100%;

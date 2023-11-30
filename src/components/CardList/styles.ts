@@ -39,7 +39,7 @@ export const TagsContainer = styled.div`
   margin-top: 8px;
   margin-bottom: 16px;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
 `
@@ -67,6 +67,7 @@ export const ProjectCard = styled.section`
   &:hover {
     transform: scale(1.1);
     transition: 0.5s;
+    margin-left: 20px;
   }
 `
 
@@ -114,6 +115,33 @@ export const LinksContainer = styled.div`
   justify-content: end;
 `
 
+export const CourseCard = styled.section`
+  max-width: 320px;
+  width: 100%;
+  max-height: 320px;
+  height: 100%;
+  background-color: ${(props) => props.theme.sectionTitle};
+  border-radius: var(--border-radius);
+  padding: 16px;
+  transition: 1s;
+  margin-top: 20px;
+  margin-right: 20px;
+
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: ${(props) => props.theme.contrastColor};
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    margin-left: 20px;
+  }
+`
+
 export const CourseContainer = styled.div`
   max-width: 320px;
   max-height: 310px;
@@ -135,38 +163,58 @@ export const CourseTitle = styled.h3`
 `
 
 export const CourseDetailsContainer = styled.div`
-  margin-top: 20px;
+  margin-bottom: 20px;
   p {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: ${(props) => props.theme.contrastColor};
-    margin-top: 4px;
   }
 `
 
-export const CourseDetails = styled.h4`
+export const CourseDetails = styled.h5`
   font-size: 16px;
+  line-height: 16px;
   font-weight: 700;
   color: var(--color-black);
   text-transform: uppercase;
+  margin-bottom: 4px;
+`
+
+export const ContactCard = styled.section`
+  max-width: 120px;
+  width: 100%;
+  max-height: 200px;
+  height: 100%;
+  background-color: ${(props) => props.theme.sectionTitle};
+  border-radius: var(--border-radius);
+  padding: 16px;
+  transition: 1s;
+  margin-top: 40px;
+
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: ${(props) => props.theme.contrastColor};
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    margin-left: 20px;
+  }
 `
 
 export const ContactContainer = styled.section`
-  max-width: 960px;
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 `
 
 export const ContactLinkContainer = styled.div`
-  display: grid;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 10px;
-`
-export const OtherContacts = styled.div`
-  width: 100%;
+  display: block;
+  text-align: center;
 `
