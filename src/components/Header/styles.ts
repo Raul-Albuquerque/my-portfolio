@@ -117,10 +117,10 @@ export const Sun = styled.img`
 
 export const Hamburger = styled.div`
   width: 32px;
+  display: none;
 
   span {
     height: 2px;
-
     width: 100%;
     background-color: var(--color-white);
     margin-bottom: 4px;
@@ -130,6 +130,10 @@ export const Hamburger = styled.div`
     @media (max-width: 768px) {
       display: block;
     }
+  }
+
+  @media (max-width: 768px) {
+    display: block;
   }
 `
 

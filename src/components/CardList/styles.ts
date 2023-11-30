@@ -5,11 +5,20 @@ import Link from 'next/link'
 export const CardsContainer = styled.div`
   display: flex;
   align-items: start;
-  justify-content: center;
+  justify-content: start;
+  flex-wrap: wrap;
   gap: 10px;
   position: relative;
   width: 100%;
-  flex-wrap: wrap;
+
+  @media (max-width: 767px) {
+    justify-content: center;
+  }
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 `
 export const SkillCard = styled.section`
   max-width: 460px;
@@ -53,7 +62,6 @@ export const TagsContainer = styled.div`
   gap: 8px;
 
   @media (max-width: 768px) {
-    margin-bottom: 8px;
   }
 `
 
@@ -68,6 +76,7 @@ export const ProjectCard = styled.section`
   transition: 1s;
   margin-top: 20px;
   margin-right: 20px;
+  text-align: left;
 
   h4 {
     font-size: 16px;
@@ -84,7 +93,10 @@ export const ProjectCard = styled.section`
   }
 
   @media (max-width: 768px) {
-    display: block;
+    max-height: 360px;
+    overflow-y: hidden;
+    margin-top: 16px;
+    margin-right: 0px;
   }
 `
 
@@ -114,20 +126,14 @@ export const LinkCustomizado = styled(Link)`
   font-size: 16px;
   height: 35px;
   margin-right: 16px;
+  text-align: center;
 
   &:hover {
     color: var(--color-green);
   }
 
-  &.see-more {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    height: auto;
-  }
-
   @media (max-width: 768px) {
-    margin-right: 8px;
+    margin-right: 0px;
   }
 `
 export const LinksContainer = styled.div`
@@ -151,6 +157,7 @@ export const CourseCard = styled.section`
   transition: 1s;
   margin-top: 20px;
   margin-right: 20px;
+  text-align: left;
 
   h4 {
     font-size: 16px;
@@ -167,8 +174,10 @@ export const CourseCard = styled.section`
   }
 
   @media (max-width: 768px) {
+    max-height: 360px;
     overflow-y: hidden;
-    max-height: 280px;
+    margin-top: 16px;
+    margin-right: 0px;
     h4 {
       font-size: 12px;
     }
@@ -244,8 +253,8 @@ export const ContactCard = styled.section`
   }
 
   @media (max-width: 768px) {
-    max-width: 90px;
-    max-height: 140px;
+    width: 90px;
+    height: 82px;
     margin-top: 0px;
     padding: 8px;
 
@@ -263,7 +272,6 @@ export const ContactContainer = styled.section`
   gap: 20px;
 
   @media (max-width: 768px) {
-    justify-content: start;
     gap: 8px;
     margin-top: 40px;
   }

@@ -54,6 +54,7 @@ export const SectionTitle = styled.h2`
   color: ${(props) => props.theme.sectionTitle};
   width: 200px;
   font-weight: 700;
+  margin-bottom: 20px;
 
   @media (max-width: 768px) {
     font-size: 32px;

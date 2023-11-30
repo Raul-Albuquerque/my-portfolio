@@ -12,9 +12,9 @@ export const Tag = styled.div`
   text-transform: uppercase;
 
   @media (max-width: 768px) {
-    padding: 4px 4px;
+    padding: 4px 8px;
     color: var(--color-white);
-    font-size: 8px;
+    font-size: 12px;
   }
 
   &:hover {

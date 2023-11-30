@@ -81,6 +81,7 @@ export const ProjectButton = styled(Button)`
     text-align: center;
     font-size: 8px;
     display: inline-block;
-    padding: 2em 2em;
+    width: 80px;
+    padding: 2em 1em;
   }
 `
