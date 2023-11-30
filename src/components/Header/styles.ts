@@ -6,7 +6,7 @@ import styled from 'styled-components'
 export const Header = styled.header`
   background-color: var(--color-black);
   padding: 20px 0;
-  max-height: 100px;
+  max-height: 120px;
   height: 100%;
 `
 export const HeaderContainer = styled.div`
@@ -112,5 +112,51 @@ export const Sun = styled.img`
     width: 10px;
     height: 10px;
     top: 5px;
+  }
+`
+
+export const Hamburger = styled.div`
+  width: 32px;
+
+  span {
+    height: 2px;
+
+    width: 100%;
+    background-color: var(--color-white);
+    margin-bottom: 4px;
+    border-radius: var(--border-radius);
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+`
+
+export const NavBarContainer = styled.div`
+  display: none;
+
+  &.isOpen {
+    display: block;
+  }
+`
+
+export const NavBar = styled.nav``
+
+export const ListItem = styled.ul`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+`
+
+export const Item = styled(Link)`
+  text-decoration: none;
+  font-size: 10px;
+  color: var(--color-white);
+  padding: 8px;
+  font-weight: bold;
+
+  &:hover {
+    color: var(--color-green);
   }
 `
