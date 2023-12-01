@@ -58,7 +58,10 @@ export default function CardList({ layout }: Props) {
                         ))}
                       </S.TagsContainer>
                       <S.LinksContainer>
-                        <S.LinkCustomizado href={project.gitHubUrl}>
+                        <S.LinkCustomizado
+                          href={project.gitHubUrl}
+                          target="_blank"
+                        >
                           <FaGithub size={32} />
                         </S.LinkCustomizado>
                         <Button

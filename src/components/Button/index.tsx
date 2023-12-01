@@ -15,7 +15,7 @@ export default function Button({ type, href, children, fontSize }: Props) {
           {children}
         </S.Button>
       ) : (
-        <S.ProjectButton href={href} fontSize={fontSize}>
+        <S.ProjectButton href={href} fontSize={fontSize} target="_blank">
           {children}
         </S.ProjectButton>
       )}
