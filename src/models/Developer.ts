@@ -3,7 +3,7 @@ const Developer = [
     fullname: 'RaulAlbuquerque',
     name: 'Raul',
     about:
-      'Sou um desenvolvedor Front End🧑🏻‍💻 com um perfil criativo, extremamente interessado em tecnologia e pela capacidade de promover experiências através de uma tela. Fui Oficial do Exército durante 7 (sete) anos, onde pude desenvolver minha disciplina, resiliência, responsabilidade, liderança, colaboratividade, equilíbrio emocional, flexibilidade e sempre busquei solucionar os problemas da melhor forma. Nesse período, tive contato com pessoas de diferentes locais do país, fortalecendo minha empatia, comunicação e capacidade de trabalhar em equipe.',
+      'Sou um desenvolvedor Front-End🧑🏻‍💻 com um perfil criativo, extremamente interessado em tecnologia e pela capacidade de promover experiências através de uma tela. Fui Oficial do Exército durante 7 (sete) anos, onde pude desenvolver minha disciplina, resiliência, responsabilidade, liderança, colaboratividade, equilíbrio emocional, flexibilidade e sempre busquei solucionar os problemas da melhor forma. Nesse período, tive contato com pessoas de diferentes locais do país, fortalecendo minha empatia, comunicação e capacidade de trabalhar em equipe.',
     hardSkills: [
       {
         skill: 'html',
@@ -166,7 +166,7 @@ const Developer = [
         title: 'Desenvolvedor full-stack python',
         knowledges:
           'HTML, JS, TS, CSS, SASS, LESS, GRUNT, GULP, React, Vue.JS, Python, DJANGO, Docker, CircleCI, DevOps e SQL',
-        period: '04/2023 - 04/2024',
+        period: '07/2023 - 07/2024',
       },
       {
         id: 2,
@@ -215,6 +215,12 @@ const Developer = [
         name: 'phone',
         icon: 'FaPhone',
         url: 'https://wa.me/5581997080397?text=Oi,%20vim%20pelo%20seu%20site.',
+      },
+      {
+        id: 6,
+        name: 'CV',
+        icon: 'Fafiledownload',
+        url: '/cv.pdf',
       },
     ],
   },

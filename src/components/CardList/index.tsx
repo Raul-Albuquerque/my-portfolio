@@ -6,6 +6,7 @@ import {
   FaLinkedin,
   FaPhone,
   FaEnvelope,
+  FaFileDownload,
 } from 'react-icons/fa'
 import Tag from '../Tag'
 import * as S from './styles'
@@ -113,6 +114,7 @@ export default function CardList({ layout }: Props) {
                         )}
                         {contact.name === 'email' && <FaEnvelope size={40} />}
                         {contact.name === 'phone' && <FaPhone size={36} />}
+                        {contact.name === 'CV' && <FaFileDownload size={40} />}
                       </S.LinkCustomizado>
                     </S.ContactLinkContainer>
                   </S.ContactCard>

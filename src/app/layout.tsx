@@ -5,8 +5,8 @@ import SocialMediaBar from '@/components/SocialMediaBar'
 import NavBar from '@/components/Navbar'
 
 export const metadata: Metadata = {
-  title: 'Raul Albuquerque - Desenvolvedor Front-end',
-  description: 'FrontEnd Developer',
+  title: 'Raul Albuquerque - Front-End Developer',
+  description: 'Front-End Developer',
   icons: {
     icon: '/favicon.svg',
   },
