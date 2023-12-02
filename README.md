@@ -1,17 +1,17 @@
 <img src="https://servidor-estatico-eight-murex.vercel.app/portifolio.png" />
 
-### [https://www.raulalbuquerque.com/](https://www.raulalbuquerque.com/)
+### <a target="_blank" href="https://www.raulalbuquerque.com/">www.raulalbuquerque.com</a>
 
 ##### Documentação | Documentation:
-- <a href="#portifólio">Português</a>
+- <a href="#portfólio">Português</a>
 - <a href="#portfolio---english">English</a>
 <br><br><br>
-# Portifólio
+# Portfólio
 
-#### [ACESSAR O PORTIFÓLIO](https://www.raulalbuquerque.com/)
+#### <a target="_blank" href="https://www.raulalbuquerque.com/">ACESSAR O PORTFÓLIO</a>
 
 ## 💬 Sobre:
-* Este é o meu portifólio e desenvolvi ele utilizando Next.JS, que me permitiu aperfeiçoar conhecimentos nesse framework. 
+* Este é o meu portfólio e desenvolvi ele utilizando Next.JS, que me permitiu aperfeiçoar conhecimentos nesse framework. 
 
 * Essa aplicação possui diversas funcionalidades, dentre elas, a possibilidade de alternar entre os temas claro e escuro, navegação entre páginas, layout responsivo e componentes com feedback visual aos usuários.
 
@@ -74,7 +74,7 @@
 
 # Portfolio - English
 
-#### [OPEN PORTFOLIO](https://www.raulalbuquerque.com/)
+#### <a target="_blank" href="https://www.raulalbuquerque.com/">OPEN PORTFOLIO</a>
 
 ## 💬 About:
 * This is my portfolio and it was developed with Next.JS to improve my knowledges about this framework.
