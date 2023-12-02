@@ -3,8 +3,8 @@
 ### [https://www.raulalbuquerque.com/](https://www.raulalbuquerque.com/)
 
 ##### Documentação | Documentation:
-* [Português](#💬-sobre)
-* [English](#portfolio)
+- <a href="#portifólio">Português</a>
+- <a href="#portfolio---english">English</a>
 <br><br><br>
 # Portifólio
 
