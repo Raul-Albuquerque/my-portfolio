@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img src="https://servidor-estatico-eight-murex.vercel.app/portifolio.png" />
 
-## Getting Started
+### [https://www.raulalbuquerque.com/]("https://www.raulalbuquerque.com/")
 
-First, run the development server:
+##### Documentação | Documentation:
+* [Português](#💬-sobre)
+* [English](#portfolio)
+<br><br><br>
+# Portifólio
 
+#### [ACESSAR O PORTIFÓLIO]("https://www.raulalbuquerque.com/")
+
+## 💬 Sobre:
+* Este é o meu portifólio e desenvolvi ele utilizando Next.JS, que me permitiu aperfeiçoar conhecimentos nesse framework. 
+
+* Essa aplicação possui diversas funcionalidades, dentre elas, a possibilidade de alternar entre os temas claro e escuro, navegação entre páginas, layout responsivo e componentes com feedback visual aos usuários.
+
+* Além disso, todas as informações renderizadas são geradas através de uma iteração em um array de objetos, denominado Developer.
+
+* Esta última funcionalidade permite uma fácil reutilização deste projeto por outros desenvolvedores, simplifica a sua manutenção e viabiliza futuras integrações.
+
+## 🛠️ Tecnologias:
+* [Next.JS]("https://nextjs.org/")
+* [Node]("https://nodejs.org/en")
+* [React]("https://react.dev/")
+* [Styled Components]("https://styled-components.com/")
+
+## ♻️ Como utilizar:
+* Faça o Fork deste projeto:
+
+<img src="https://servidor-estatico-eight-murex.vercel.app/fork.jpg" />
+
+* Acesse o seu repositório e copie a URL dele:
+
+<img src="https://servidor-estatico-eight-murex.vercel.app/clone.jpg" />
+
+* Abra o seu terminal e clone o projeto:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  $ git clone https://github.com/Raul-Albuquerque/my-portfolio.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* Acesse o diretório e instale as dependências necessárias:
+```bash
+  $ npm install 
+  # ou
+  $ yarn
+  # ou
+  $ pnpm install
+  # ou
+  $ bun install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* Rode o servidor de desenvolvimento:
+```bash
+  npm run dev
+  # ou
+  yarn dev
+  # ou
+  pnpm dev
+  # ou
+  bun dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+* Acesse [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-## Learn More
+* Abra o seu IDE de preferência e acesse o arquivo 'Developer.ts' criado dentro da pasta 'src'.
 
-To learn more about Next.js, take a look at the following resources:
+* Altere os dados de acordo com suas competências.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Realize demais alterações no projeto, caso julgue necessário.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<br/>
+<br/>
 
-## Deploy on Vercel
+# Portfolio - English
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### [OPEN PORTFOLIO]("https://www.raulalbuquerque.com/")
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 💬 About:
+* This is my portfolio and it was developed with Next.JS to improve my knowledges about this framework.
+
+* This application have many features, like the dark and light theme, navigation between pages, responsive layout and componentes with visual feedback.
+
+* In addition to that all the data is rendering from the iteration of an object array named developer.
+
+* This features allows other developers use this project as their own, makes the code maintenance easier and enable future API integrations.
+
+
+## 🛠️ Techs:
+* [Next.JS]("https://nextjs.org/")
+* [Node]("https://nodejs.org/en")
+* [React]("https://react.dev/")
+* [Styled Components]("https://styled-components.com/")
+
+## ♻️ How to use:
+* Fork this project:
+
+<img src="https://servidor-estatico-eight-murex.vercel.app/fork.jpg" />
+
+* Open your repositorie and copy the URL:
+
+<img src="https://servidor-estatico-eight-murex.vercel.app/clone.jpg" />
+
+* Open your terminal and clone this project:
+```bash
+  $ git clone https://github.com/Raul-Albuquerque/my-portfolio.git
+```
+
+* Open the repositorie and install all the dependencies:
+```bash
+  $ npm install 
+  # ou
+  $ yarn
+  # ou
+  $ pnpm install
+  # ou
+  $ bun install
+```
+
+* Run the development server:
+```bash
+  npm run dev
+  # ou
+  yarn dev
+  # ou
+  pnpm dev
+  # ou
+  bun dev
+```
+
+* Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+* Open the 'Developer.ts' file in the 'src' folder.
+
+* Change the data as your wish.
+
+* Make other changes if you want.
