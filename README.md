@@ -1,6 +1,6 @@
 <img src="https://servidor-estatico-eight-murex.vercel.app/portifolio.png" />
 
-### [https://www.raulalbuquerque.com/]("https://www.raulalbuquerque.com/")
+### [https://www.raulalbuquerque.com/](https://www.raulalbuquerque.com/)
 
 ##### Documentação | Documentation:
 * [Português](#💬-sobre)
@@ -8,7 +8,7 @@
 <br><br><br>
 # Portifólio
 
-#### [ACESSAR O PORTIFÓLIO]("https://www.raulalbuquerque.com/")
+#### [ACESSAR O PORTIFÓLIO](https://www.raulalbuquerque.com/)
 
 ## 💬 Sobre:
 * Este é o meu portifólio e desenvolvi ele utilizando Next.JS, que me permitiu aperfeiçoar conhecimentos nesse framework. 
@@ -20,10 +20,10 @@
 * Esta última funcionalidade permite uma fácil reutilização deste projeto por outros desenvolvedores, simplifica a sua manutenção e viabiliza futuras integrações.
 
 ## 🛠️ Tecnologias:
-* [Next.JS]("https://nextjs.org/")
-* [Node]("https://nodejs.org/en")
-* [React]("https://react.dev/")
-* [Styled Components]("https://styled-components.com/")
+* [Next.JS](https://nextjs.org/)
+* [Node](https://nodejs.org/en)
+* [React](https://react.dev/)
+* [Styled Components](https://styled-components.com/)
 
 ## ♻️ Como utilizar:
 * Faça o Fork deste projeto:
@@ -74,7 +74,7 @@
 
 # Portfolio - English
 
-#### [OPEN PORTFOLIO]("https://www.raulalbuquerque.com/")
+#### [OPEN PORTFOLIO](https://www.raulalbuquerque.com/)
 
 ## 💬 About:
 * This is my portfolio and it was developed with Next.JS to improve my knowledges about this framework.
@@ -87,10 +87,10 @@
 
 
 ## 🛠️ Techs:
-* [Next.JS]("https://nextjs.org/")
-* [Node]("https://nodejs.org/en")
-* [React]("https://react.dev/")
-* [Styled Components]("https://styled-components.com/")
+* [Next.JS](https://nextjs.org/)
+* [Node](https://nodejs.org/en)
+* [React](https://react.dev/)
+* [Styled Components](https://styled-components.com/)
 
 ## ♻️ How to use:
 * Fork this project:
